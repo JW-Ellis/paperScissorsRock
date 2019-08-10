@@ -79,11 +79,21 @@
                     continue;
                 }
             }
-            
+            console.log("GAME OVER");
+            if (playerScore > computerScore){
+                console.log("YOU WIN!");
+            }
+            else {
+                console.log("YOU LOSE!");
+            }
+            console.log("Final Score - You: " + playerScore + " Computer: " + computerScore);
         }  
         
+
+
         game();
-            
+        
+      
             </script>
             
 </head>
