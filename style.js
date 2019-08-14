@@ -42,8 +42,23 @@ function playRound(playerSelection, computerSelection) {
             return "loss";
     }
 }
-    
-function game() {
+
+let rock = document.querySelector('#rock');
+rock.addEventListener('click', () => {
+    console.log("rock");
+  });
+
+let paper = document.querySelector('#paper');
+paper.addEventListener('click', () => {
+    console.log("paper");
+});
+
+let scissors = document.querySelector('#scissors');
+scissors.addEventListener('click', () => {
+    console.log("scissors");
+    });
+
+/* function game() {
     var rounds = prompt("Select a number of rounds: ");
     var playerScore = 0;
     var computerScore = 0;
@@ -79,7 +94,6 @@ function game() {
     }
     console.log("Final Score - You: " + playerScore + " Computer: " + computerScore);
 }  
+ */
 
 
-
-game();
